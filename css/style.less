@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');
+// 300,400,600,700,800
+
+body{
+	// background: gray;
+	font-size: 15px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.headerBG{
+	padding: 0;
+	background: url(../img/headerBG.png);
+	background-size: cover;
+	min-height: 100vh;
+}
+// navigation
+.navBG{
+  background: rgba(0, 0, 0, 0.5);
+  height: 66px;
+  margin: 0;
+  border-bottom: solid white 3px;
+
+  // z-index: 1;
+  // position: absolute;
+}
+
+//border button toogle
+.navbar-light .navbar-toggler {
+    border-color: rgb(255, 255, 255);
+}
+.navbar-light .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='4' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+.navbar-collapse{
+	background: rgba(255, 255, 255, 0.8);
+	text-align: center;
+	border-radius: 5px;
+}
+.nav-link{
+	padding: 15px;
+	&:hover{
+		font-weight: bolder;
+	}
+}
+// end navigation
+
+//header title
+
+.headerBG--title {
+
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    text-align: center;
+    
+	h1{
+	text-align: center;
+	color: #ffffff;
+	text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.35);
+	font-weight: 600;
+	}
+}
+
+// icon about
+.about{
+	margin-top: 49px;
+}
+.one-third{
+	width: 200px;
+	text-align: center;
+}
+.one-third_inner:nth-of-type(2){
+	padding-top: 23px;
+}
+.one-third_inner:nth-of-type(3){
+	padding-top: 23px;
+}
+.icon-1>img{
+	width: 160px;
+	height: 160px;
+	margin-bottom: 18px;
+}
+.icon_text{
+	text-align: justify;
+	line-height: 1.5;
+	font-size: 12px;
+ 	font-weight: 300;
+}
+table.GeneratedTable thead {
+  background-color: #0981d8;
+  height: 41px;
+  padding: 0;
+  font-size: 24px;
+  font-weight: 800;
+  color: #fffefe;
+  text-align: center;
+  border: solid 2px #0981d8;
+}
+
+table.GeneratedTable {
+  width: 100%;
+  background-color: #ffffff;
+  // border-collapse: collapse;
+  // border: solid 2px #acacac;
+  // color: #000000;
+}
+
+table.GeneratedTable td {
+   font-size: 12px;
+  font-weight: 300;
+  border: solid 2px #acacac;
+  text-align: center;
+  vertical-align:  center;
+  
+}
+.table td, .table th {
+    padding: 7px;
+    vertical-align: inherit;
+}
