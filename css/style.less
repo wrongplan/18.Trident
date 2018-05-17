@@ -42,6 +42,7 @@ img{
   // position: absolute;
 }
 
+
 //border button toogle
 .navbar-light .navbar-toggler {
     border-color: rgb(255, 255, 255);
@@ -64,16 +65,16 @@ img{
 
 //header title
 
-.headerBG--title {
-
-    height: 100vh;
+.headerBG--title{
+	margin: 0;
+	height: 100vh;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     position: absolute;
     text-align: center;
-    
+
 	h1{
 	text-align: center;
 	color: #ffffff;
@@ -181,7 +182,6 @@ table.table_wrapper td {
 .maps{
 	margin-top: 39px;
 	height: 97px;
-	padding: 0;
 }
 .contact_Icon{
 	margin-top: 20px;
@@ -228,7 +228,6 @@ table.table_wrapper td {
  	list-style: none;
 
  	a{
-
  		color: white;
 	 	font-size: 12px;
 		font-weight: 300;
@@ -264,8 +263,112 @@ table.table_wrapper td {
 	font-size: 28px;
 	}
 }
+
+// icon about
+.one-third_inner:nth-of-type(2){
+	padding-top: 0px;
+}
+.one-third_inner:nth-of-type(3){
+	padding-top: 0px;
+}
+//contact section
+.contactBG{
+	margin-top: 15px;
 }
 
+//contact section
+.contact_Icon{
+	display: flex;
+	align-items: center;
+}
+
+// menu bottom
+ .footerBG{
+  height: 85px;
+ }
+ .menu_bottom--list {
+ 	display: inline-block;
+ 	}//.menu-bottom--list
+
+}//media
+
+@media (min-width: 768px) { 
+
+//header title
+.headerBG--title {   
+	h1{
+	text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.55);
+	font-size: 34px;
+	}
+}
+//contact section
+.maps{
+	margin-top: 47px;
+	height: 118px;
+}
+}//media
+
+@media (min-width: 992px) {
+	.navbar-collapse{
+		background: inherit;
+	}
+
+.navbar-light .navbar-nav .nav-link{
+	color: #ffffff;
+	&:hover{
+		color: #ffffff;
+	}
+}
+//header title
+.headerBG--title {   
+	h1{
+	text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.55);
+	font-size: 45px;
+	}
+}
+// paragraph next to table
+.paraghaph{
+	margin-top: 0px;
+}
+
+}//media
+
+@media (min-width: 1200px) { 
+	//header title
+.headerBG--title {   
+	h1{
+	text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.55);
+	font-size: 60px;
+	}
+}
+
+// icon about
+.about{
+	margin-top: 49px;
+}
+.one-third{
+	// width: 200px;
+	text-align: center;
+}
+.one-third_inner:nth-of-type(2){
+	padding-top: 23px;
+}
+.one-third_inner:nth-of-type(3){
+	padding-top: 23px;
+}
+.icon-1>img{
+	width: 160px;
+	height: 160px;
+	margin-bottom: 18px;
+}
+.icon_text{
+	text-align: justify;
+	line-height: 1.5;
+	font-size: 12px;
+ 	font-weight: 300;
+}
+
+}//media
 
 // Extra small (xs) devices (portrait phones, less than 576px)
 // No media query since this is the default in Bootstrap
