@@ -113,7 +113,7 @@ img{
 	margin-top: 49px;
 }
 
-table.GeneratedTable thead {
+table.table_wrapper thead {
   background-color: #0981d8;
   height: 41px;
   padding: 0;
@@ -124,7 +124,7 @@ table.GeneratedTable thead {
   border: solid 2px #0981d8;
 }
 
-table.GeneratedTable {
+table.table_wrapper {
   width: 100%;
   background-color: #ffffff;
   // border-collapse: collapse;
@@ -132,7 +132,7 @@ table.GeneratedTable {
   // color: #000000;
 }
 
-table.GeneratedTable td {
+table.table_wrapper td {
    font-size: 12px;
   font-weight: 300;
   border: solid 2px #acacac;
@@ -205,6 +205,12 @@ table.GeneratedTable td {
   	// color: white;
   	display: flex;
 	flex-direction: column;
+	&:hover{
+ 			text-decoration:none;
+ 		}
+ 	p:hover{
+ 		font-weight: bolder;
+ 	}
  }
 
  // menu bottom
@@ -216,7 +222,7 @@ table.GeneratedTable td {
  	margin-top: 10px;
  	margin-bottom: 10px;
  }
- .menu-bottom--list {
+ .menu_bottom--list {
  	// display: inline-block;
  	text-decoration: none;
  	list-style: none;
@@ -232,9 +238,11 @@ table.GeneratedTable td {
  		&:hover{
  			font-weight: bolder;
  			text-decoration:none;
- 		}
- 	}
- 	}
+ 		}//hover
+ 	}//a
+ 	}//.menu-bottom--list
+
+
  	.about-author{
  		background: #000000;
  		color: white;
@@ -242,5 +250,30 @@ table.GeneratedTable td {
  		p{
  			padding: 5px;
 
- 		}
+ 		}//p
  	}
+
+// Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+
+//header title
+.headerBG--title {   
+	h1{
+	text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.35);
+	font-weight: 600;
+	font-size: 28px;
+	}
+}
+}
+
+
+// Extra small (xs) devices (portrait phones, less than 576px)
+// No media query since this is the default in Bootstrap
+// Small (sm) devices (landscape phones, 576px and up)
+// @media (min-width: 576px) { ... }
+// Medium (md) devices (tablets, 768px and up)
+// @media (min-width: 768px) { ... }
+// Large (lg) devices (desktops, 992px and up)
+// @media (min-width: 992px) { ... }
+// Extra (xl) large devices (large desktops, 1200px and up)
+// @media (min-width: 1200px) { ... }
