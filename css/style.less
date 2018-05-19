@@ -137,12 +137,10 @@ table.table_wrapper td {
    font-size: 12px;
   font-weight: 300;
   border: solid 2px #acacac;
-  text-align: center;
-  vertical-align:  center;
-  
+  text-align: center;  
 }
-.table td, .table th {
-    padding: 7px;
+table td, table th {
+    padding: 5px;
     vertical-align: inherit;
 }
 .table--information{
@@ -265,11 +263,19 @@ table.table_wrapper td {
 }
 
 // icon about
+.one-third{
+	width: 300px;
+	}
 .one-third_inner:nth-of-type(2){
-	padding-top: 0px;
+	padding-top: 23px;
 }
 .one-third_inner:nth-of-type(3){
-	padding-top: 0px;
+	padding-top: 23px;
+}
+.icon-1>img{
+	width: 160px;
+	height: 160px;
+	margin-bottom: 18px;
 }
 //contact section
 .contactBG{
@@ -301,11 +307,28 @@ table.table_wrapper td {
 	font-size: 34px;
 	}
 }
+// icon about
+.one-third{
+	width: 300px;
+	}
+.one-third_inner:nth-of-type(2){
+	padding-top: 0px;
+}
+.one-third_inner:nth-of-type(3){
+	padding-top: 0px;
+}
+.icon-1>img{
+	width: 160px;
+	height: 160px;
+	margin-bottom: 18px;
+}
+
 //contact section
 .maps{
 	margin-top: 47px;
 	height: 118px;
 }
+
 }//media
 
 @media (min-width: 992px) {
@@ -344,28 +367,49 @@ table.table_wrapper td {
 
 // icon about
 .about{
-	margin-top: 49px;
+	margin-top: 104px;
 }
 .one-third{
-	// width: 200px;
-	text-align: center;
+	width: inherit;
 }
-.one-third_inner:nth-of-type(2){
-	padding-top: 23px;
-}
-.one-third_inner:nth-of-type(3){
-	padding-top: 23px;
+.one-third_inner:nth-of-type(2) > .one-third{
+	padding-left: 10px;
+	padding-right: 10px;
+
 }
 .icon-1>img{
-	width: 160px;
-	height: 160px;
-	margin-bottom: 18px;
+	width: 240px;
+	height: 240px;
 }
 .icon_text{
-	text-align: justify;
-	line-height: 1.5;
-	font-size: 12px;
- 	font-weight: 300;
+	font-size: 14px;
+}
+
+// table
+.table_container{
+	margin-top: 49px;
+}
+
+table.table_wrapper thead {
+  height: 51px;
+  font-size: 24px;
+
+}
+
+
+table.table_wrapper td {
+   font-size: 14px;
+}
+table td, table th {
+    padding: 5px;
+}
+//end table
+
+// paragraph next to table
+.paraghaph{
+	p{
+	 font-size: 14px;
+	}
 }
 
 }//media
